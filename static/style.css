@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#water-wheel {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carimg {
+    width: 300px;
+    /* visibility: hidden; */
+    /* hide images until carousel positions them */
+    cursor: pointer;
+}

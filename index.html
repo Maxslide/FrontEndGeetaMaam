@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="static/bootstrap-4.4.1-dist/css/bootstrap.min.css" media="screen,projection " />
+    <link type="text/css " rel="stylesheet " href="static/style.css " screen,projection />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="static/jquery.waterwheelCarousel.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 " />
+    <script>
+        $(document).ready(function() {
+            $("#water-wheel").waterwheelCarousel({
+                horizon: 110,
+                horizonOffset: -50,
+                horizonOffsetMultiplier: .7,
+                separation: 350,
+                edgeFadeEnabled: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br>
+
+        <div id="water-wheel">
+            <img src="static/img/person1.jpg" onclick="change(1)" class="carimg">
+            <img src="static/img/person2.png" onclick="change(2)" class="carimg">
+            <img src="static/img/person3.jpeg" onclick="change(3)" class="carimg">
+        </div>
+        <br><br>
+        <div class="row">
+
+            <div class="text-center" id="cartext">
+                <h3>HELLO 2</h3>
+                <h5> 2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo iusto dicta a voluptatibus possimus exercitationem alias fugiat cupiditate nobis laboriosam beatae quas ab explicabo vel, sit officia eveniet nam!</h5>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script>
+        // $(document).ready(function() {
+        //     $("#waterwheel-carousel").waterwheelCarousel({
+        //         horizon: 110,
+        //         horizonOffset: -50,
+        //         horizonOffsetMultiplier: .7,
+        //         separation: 150,
+        //         edgeFadeEnabled: true
+        //     });
+        // });
+
+        function change(i) {
+            var val = i
+            $("#cartext").html("<h3>HELLO " + val + "</h3><h5>" + val + "<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo iusto dicta a voluptatibus possimus exercitationem alias fugiat cupiditate nobis laboriosam beatae quas ab explicabo vel, sit officia eveniet nam!</h5>")
+        }
+    </script>
+    <script type="text/javascript " src="static/bootstrap-4.4.1-dist/js/bootstrap.min.js "></script>
+</body>
+
+</html>
